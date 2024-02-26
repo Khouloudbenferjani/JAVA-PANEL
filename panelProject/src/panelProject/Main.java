@@ -34,7 +34,7 @@ public class Main {
 		label.setIcon(icon);
 		label.setVerticalAlignment(JLabel.CENTER); // TOP,CENTER, BOTTOM 
 		label.setHorizontalAlignment(JLabel.CENTER); // LEFT,CENTER, RIGHT 
-//		label.setBounds(100, 100, 75, 75);
+//		label.setBounds(100, 100, 75, 75); // si on veut préciser la position  +++
 		label.setFont(new Font("MV Boli",Font.PLAIN,100)); // STYLE of text
 		
 		
@@ -43,7 +43,9 @@ public class Main {
 		JPanel redPanel = new JPanel();
 		redPanel.setBackground(Color.red);
 		redPanel.setBounds(0, 0, 250, 250);
-		redPanel.setLayout(new BorderLayout());
+		redPanel.setLayout(new BorderLayout()); // new border layout to make la position par défaut ou standard
+		
+		// si on veut préciser la position (ligne37) on ca revient (null)
 		
 		JPanel bluePanel = new JPanel();
 		bluePanel.setBackground(Color.blue);
